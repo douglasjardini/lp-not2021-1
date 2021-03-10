@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Par e impar</title>
+    <script>
+        // 'use strict' impede que variáveis sejam declaradas
+        // sem o uso de let, var ou const
+        // Inicializar variáveis diretamente é má prática de
+        // programação
+        'use strict'
+
+        /*
+            Peça ao usuário para informar um número, usando
+            prompt(). Determine se o número digitado é par
+            ou ímpar e informe ao usuário usando alert().
+        */
+        let numero = parseInt(prompt('Informe um número inteiro.'))
+
+        if(isNaN(numero)) {
+            alert('ERRO: O valor informado não é um caracter numérico válido!')
+        }
+        else if (numero % 2 == 0) {
+            alert('O número digitado é PAR!')
+        }
+        else {
+            alert('O número digitado é IMPAR')
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
